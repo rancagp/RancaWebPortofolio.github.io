@@ -1,0 +1,199 @@
+hr {
+  width: 250px;
+  border-top: 4px solid black;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.jumbotron {
+  padding: 6rem 0;
+  background-color: rgb(216, 216, 216);
+}
+
+.jumbotron p a {
+  text-decoration: none;
+  color: #666;
+  opacity: 0.8;
+}
+
+.jumbotron p a:hover {
+  opacity: 1;
+}
+
+#about {
+  padding: 4rem 0;
+}
+
+/* My Skill */
+.skill {
+  background-color: rgb(216, 216, 216);
+  padding: 4rem 0;
+}
+
+.skill ul li i {
+  font-size: 200px;
+  transition: all linear 0.3s;
+}
+
+.skill ul li p {
+  font-size: 20px;
+}
+
+.skill ul li .css {
+  padding-right: 35px;
+}
+/* My Skill Penutup */
+
+/* Achievment */
+.achievement {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4rem 0;
+}
+
+.achievement ul li {
+  display: inline-block;
+}
+
+.achievement h2 {
+  font-size: 40px;
+}
+
+.achievement img {
+  filter: drop-shadow(2px 0px 2px black) drop-shadow(-2px 0px 2px black);
+  transition: 0.3s ease;
+}
+
+.achievement a:hover .after {
+  transform: scale(0.9);
+}
+
+/* Overlay */
+
+.overlay {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  text-align: center;
+  transition: 0.8s;
+  padding: 50px 0 50px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+  animation: zoomdanfade 1s;
+}
+
+/* Animation */
+@keyframes zoomdanfade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Achievement Penutup */
+
+/* My Contact */
+.contact {
+  padding-top: 90px;
+  min-height: 500px;
+  background-color: rgb(226, 226, 226);
+}
+
+.contact h2 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contact ul {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact ul li {
+  display: inline;
+}
+
+.contact .fab {
+  font-size: 100px;
+  margin: 0 20px;
+}
+
+.contact ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* My Contact Penutup */
+
+/* Footer */
+footer {
+  height: 100px;
+  line-height: 100px;
+}
+/* Footer Penutup */
+
+/* Responsive */
+@media (max-width: 900px) {
+  /* Achievement */
+  .achievement img {
+    width: 80%;
+  }
+
+  .overlay img {
+    max-height: 70%;
+    margin-top: 150px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+  /* Achievement Penutup */
+}
+
+@media (max-width: 800px) {
+  /* achievement */
+  .achievement img {
+    width: 80%;
+  }
+
+  .overlay img {
+    max-height: 50%;
+    margin-top: 150px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+  /* Achievement Penutup */
+
+  /* My Contact */
+  .fa-instagram-square {
+    padding-bottom: 20px;
+  }
+  /* My Contact Penutup */
+}
+/* Responsif Penutup */
+
+/* Back */
+#back {
+  display: none;
+}
+/* Back Penutup */
